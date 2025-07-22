@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+:root{
+    --cor-fundo-efai: #FFFDF3;
+    --cor-detalhes: #F4CA5F;
+    --cor-vermelho: #F26958;
+    --cor-texto: #555;
+    --cor-texto-secundario: #73C26B;
+
+}
+
+body {
+    font-family: 'Arial Rounded MT Bold', sans-serif;
+    background-color:var(--cor-fundo-efai);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+body.modo-resultado {
+    justify-content: flex-start;
+    padding-top: 5%;
+}
+
+#inicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    padding: 20px;
+}
+
+.oculto {
+    display: none !important;
+}
+
+h1,
+h2,
+p,
+button {
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 26px;
+    color: var(--cor-vermelho);
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto 30px;
+}
+
+button {
+    background-color: var(--cor-vermelho);
+    color: var(--cor-fundo-efai);
+    font-size: 20px;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+button:hover {
+    background-color: var(--cor-detalhes);
+    color: var(--cor-texto);
+}
+
+.resultado {
+    margin-top: 30px;
+    padding: 30px;
+    background-color: var(--cor-fundo-efai);
+    display: none;
+}
+
+
+.resultado h2 {
+    font-size: 20px;
+    color: var(--cor-texto);
+    margin-bottom: 20px;
+}
+
+.historia {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: var(--cor-texto-secundario)
+}
+
+.forma {
+    display: inline-block;
+    padding: 20px;
+    border-radius: 12px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.forma .emoji {
+    font-size: 48px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.disclaimer{
+    padding-top: 5%;
+    font-weight: 100;
+    font-style: italic;
+}
