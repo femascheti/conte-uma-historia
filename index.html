@@ -11,22 +11,26 @@
 <body>
 
     <h1 id="titulo">UMA HISTÓRIA PARA CONTAR 🎴</h1>
-    <div id="inicio">
+    <div id="inicio" class="card">
         <p>CLIQUE NO BOTÃO ABAIXO PARA SORTEAR UMA HISTÓRIA E UMA FORMA DE CONTAR.</p>
         <p>VOCÊ PODE SORTEAR QUANTAS VEZES QUISER!</p>
-        <button id="sortearBtn">🎲 SORTEAR</button>
+        <button id="sortearBtn" class="botao-circular sortear-btn">🎲<br>SORTEAR</button>
     </div>
 
-    <div class="resultado" id="resultado">
+    <div id="resultado" class="card resultado">
         <h2>RESULTADO</h2>
         <div class="historia" id="historia">HISTÓRIA: ...</div>
         <div class="forma" id="forma">
             <span class="emoji">🎭</span>
             <div id="formaNome">MÍMICA</div>
         </div>
-        <br>
-        <button id="ouvirBtn">OUVIR 🔊</button>
+        <div class="botoes-acao">
+            <button id="sortearBtn2" class="botao-circular sortear-btn">🔄<br>SORTEAR</button>
+            <button id="ouvirBtn" class="botao-circular ouvir-btn">🔊<br>OUVIR</button>
+        </div>
+
     </div>
+
     <!-- Som da roleta -->
     <audio id="roleta-som" src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_d37855e3cc.mp3"
         preload="auto"></audio>

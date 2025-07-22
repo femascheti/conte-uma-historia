@@ -1,24 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
-:root{
-    --cor-fundo-efai: #FFFDF3;
+
+:root {
+    --cor-fundo-efai: #FAF8ED;
     --cor-detalhes: #F4CA5F;
     --cor-vermelho: #F26958;
-    --cor-texto: #555;
-    --cor-texto-secundario: #73C26B;
-
+    --cor-azul: #0047FF;
+    --cor-texto: #222;
 }
 
 body {
-    font-family: "Saira", sans-serif;
-    background-color:var(--cor-fundo-efai);
+    font-family: 'Saira', sans-serif;
+    background-color: var(--cor-fundo-efai);
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
-    height: 100vh;
     justify-content: center;
     align-items: center;
     text-align: center;
+    min-height: 100vh;
 }
 
 body.modo-resultado {
@@ -26,22 +26,7 @@ body.modo-resultado {
     padding-top: 5%;
 }
 
-#inicio {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 600px;
-    padding: 20px;
-}
-
-.oculto {
-    display: none !important;
-}
-
-h1,
-h2,
-p,
-button {
+h1, h2, button {
     text-transform: uppercase;
 }
 
@@ -52,64 +37,115 @@ h1 {
 }
 
 p {
-    font-size: 18px;
-    max-width: 600px;
-    margin: 0 auto 30px;
-}
-
-button {
-    background-color: var(--cor-vermelho);
-    color: var(--cor-fundo-efai);
-    font-size: 20px;
-    padding: 15px 25px;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    margin: 10px;
-}
-
-button:hover {
-    background-color: var(--cor-detalhes);
+    font-size: 16px;
+    margin-bottom: 15px;
     color: var(--cor-texto);
+}
+
+.card {
+    background-color: white;
+    border-radius: 30px;
+    padding: 40px 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    max-width: 780px;
+    height: 80%;
+    width: 95%;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* Botões circulares */
+.botao-circular {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+.sortear-btn {
+    background-color: var(--cor-azul);
+}
+
+.ouvir-btn {
+    background-color: var(--cor-vermelho);
 }
 
 .resultado {
-    margin-top: 30px;
-    padding: 30px;
-    background-color: var(--cor-fundo-efai);
+    padding: 30px 20px;
     display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    max-width: 700px;
+    width: 90%;
 }
-
 
 .resultado h2 {
-    font-size: 20px;
-    color: var(--cor-texto);
-    margin-bottom: 20px;
-}
-
-.historia {
-    font-size: 22px;
-    font-weight: bold;
-    margin-bottom: 30px;
-    color: var(--cor-texto-secundario)
-}
-
-.forma {
-    display: inline-block;
-    padding: 20px;
-    border-radius: 12px;
-    font-size: 18px;
-    text-align: center;
-}
-
-.forma .emoji {
-    font-size: 48px;
-    display: block;
+    font-size: 14px;
+    color: #222;
+    font-weight: 700;
     margin-bottom: 10px;
 }
 
-.disclaimer{
-    padding-top: 5%;
-    font-weight: 100;
-    font-style: italic;
+.historia {
+    font-size: 24px;
+    font-weight: 400;
+    color: #222;
+    margin-bottom: 90px;
+    text-align: center;
 }
+
+.forma {
+    font-size: 22px;
+    font-weight: 700;
+    color: #222;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.forma .emoji {
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+
+/* Botão container (linha com 2 botões) */
+.botoes-acao {
+    display: flex;
+    justify-content: center;
+    gap: 50%;
+    margin-top: 20px;
+}
+
+/* Oculta se necessário */
+.oculto {
+    display: none !important;
+}
+
+/* Rodapé do site */
+.disclaimer {
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 100;
+    color: #222;
+    max-width: 600px;
+    text-align: center;
+    margin: 40px auto 20px;
+    line-height: 1.5;
+}
+

@@ -57,4 +57,7 @@ function lerResultado() {
 document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('sortearBtn').addEventListener('click', sortear);
     document.getElementById('ouvirBtn').addEventListener('click', lerResultado);
+    document.getElementById('sortearBtn2').addEventListener('click', sortear);
 });
+
+
