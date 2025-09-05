@@ -10,7 +10,7 @@ const historias = [
 ];
 
 const formas = [
-    { nome: "MÍMICA", emoji: "💃" },
+    { nome: "EXPRESSÕES CORPORAIS", emoji: "💃" },
     { nome: "SONS COM A BOCA", emoji: "🎤" },
     { nome: "DESENHOS", emoji: "🎨" },
     { nome: "EMOJIS E SÍMBOLOS", emoji: "😊🔺⭐" }

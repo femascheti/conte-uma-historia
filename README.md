@@ -12,7 +12,7 @@ Este projeto foi desenvolvido com o objetivo de **estimular a criatividade e o r
 Ao clicar em um botão, a criança sorteia:
 
 * Uma **história curta**
-* Uma **forma de representar essa história** (como mímica, sons com a boca, emojis ou desenhos)
+* Uma **forma de representar essa história** (como expressões corporais, sons com a boca, emojis ou desenhos)
 
 O resultado também pode ser **ouvido com leitura em voz alta**, garantindo **acessibilidade** a crianças em fase de alfabetização.
 
